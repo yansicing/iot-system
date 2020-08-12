@@ -1,0 +1,126 @@
+<!DOCTYPE UI><UI>
+<class>Form</class>
+<widget>
+    <class>QWidget</class>
+    <property stdset="1">
+        <name>name</name>
+        <cstring>Form</cstring>
+    </property>
+    <property stdset="1">
+        <name>geometry</name>
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>584</width>
+            <height>480</height>
+        </rect>
+    </property>
+    <property stdset="1">
+        <name>caption</name>
+        <string>YangQingForm</string>
+    </property>
+    <widget>
+        <class>QPushButton</class>
+        <property stdset="1">
+            <name>name</name>
+            <cstring>Name</cstring>
+        </property>
+        <property stdset="1">
+            <name>geometry</name>
+            <rect>
+                <x>400</x>
+                <y>60</y>
+                <width>97</width>
+                <height>30</height>
+            </rect>
+        </property>
+        <property stdset="1">
+            <name>text</name>
+            <string>NAME</string>
+        </property>
+    </widget>
+    <widget>
+        <class>QPushButton</class>
+        <property stdset="1">
+            <name>name</name>
+            <cstring>Id</cstring>
+        </property>
+        <property stdset="1">
+            <name>geometry</name>
+            <rect>
+                <x>400</x>
+                <y>120</y>
+                <width>97</width>
+                <height>30</height>
+            </rect>
+        </property>
+        <property stdset="1">
+            <name>text</name>
+            <string>ID</string>
+        </property>
+    </widget>
+    <widget>
+        <class>QPushButton</class>
+        <property stdset="1">
+            <name>name</name>
+            <cstring>Class</cstring>
+        </property>
+        <property stdset="1">
+            <name>geometry</name>
+            <rect>
+                <x>400</x>
+                <y>180</y>
+                <width>97</width>
+                <height>30</height>
+            </rect>
+        </property>
+        <property stdset="1">
+            <name>text</name>
+            <string>CLASS</string>
+        </property>
+    </widget>
+    <widget>
+        <class>QLabel</class>
+        <property stdset="1">
+            <name>name</name>
+            <cstring>Label</cstring>
+        </property>
+        <property stdset="1">
+            <name>geometry</name>
+            <rect>
+                <x>390</x>
+                <y>240</y>
+                <width>120</width>
+                <height>20</height>
+            </rect>
+        </property>
+        <property stdset="1">
+            <name>text</name>
+            <string>LABEL</string>
+        </property>
+    </widget>
+</widget>
+<connections>
+    <connection>
+        <sender>Name</sender>
+        <signal>clicked()</signal>
+        <receiver>Form</receiver>
+        <slot>NameSlot()</slot>
+    </connection>
+    <connection>
+        <sender>Id</sender>
+        <signal>clicked()</signal>
+        <receiver>Form</receiver>
+        <slot>IdSlot()</slot>
+    </connection>
+    <connection>
+        <sender>Class</sender>
+        <signal>clicked()</signal>
+        <receiver>Form</receiver>
+        <slot>ClassSlot()</slot>
+    </connection>
+    <slot access="public">ClassSlot()</slot>
+    <slot access="public">IdSlot()</slot>
+    <slot access="public">NameSlot()</slot>
+</connections>
+</UI>

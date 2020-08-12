@@ -1,0 +1,13 @@
+#!/bin/bash
+
+#echo $PATH
+#source /etc/profile
+
+#progen -o yang.pro
+
+#tmake -o Makefile yang.pro
+
+qmake -o Makefile -spec /opt/FriendlyARM/mini2440/x86-qtopia/qtopia-2.2.0-FriendlyARM/qtopia/mkspecs/qws/linux-generic-g++ *.pro 
+
+#make clean
+make

@@ -1,0 +1,7 @@
+#!/bin/bash
+
+$QTDIR/bin/uic -o yang.h yang.ui
+$QTDIR/bin/uic -o yang.cpp -impl yang.h yang.ui
+$QTDIR/bin/moc yang.h -o moc_yang.cpp
+
+
